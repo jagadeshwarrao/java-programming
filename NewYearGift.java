@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
-import java.util.Scanner;
-class NewYear
+//import java.util.Scanner;
+class NewYearGift
 {
    Scanner ss=new Scanner(System.in);
    int weight=ss.nextInt();
@@ -10,7 +10,10 @@ class NewYear
    String name_of_choco=ss.nextLine();
    
 }
-class Chocos extends NewYear
+class Chocolates extends NewYearGift
+{
+}
+class Sweets extends Chocolates
 {
 }
 public class App
@@ -28,7 +31,7 @@ public class App
         }
         System.out.println("total weight of gifts="+total);
         System.out.print("candies Range");
-        System.out.println("enter the upper and lower limits of the range");
+        System.out.println("enter the upper and lower bound of the range");
         int u=s.nextInt();
         int l=s.nextInt();
         for(int i=0;i<n;i++)
@@ -41,3 +44,4 @@ public class App
     }
    
 }
+
